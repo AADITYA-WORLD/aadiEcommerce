@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aaditya's Shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/cart.css">
+</head>
+<body>
+
+    <nav class="navbar">
+      <a class="Aadi" href="/index.html"><h2>AADITYA'S SHOP</h2></a>
+      <input type="text" placeholder="Search products..." id="searchInput">
+        <div class="cart-icon">
+  <i class="fa-solid fa-cart-plus"></i>
+  <span class="cart-count">0</span>
+</div>
+    </nav>
+
+<div id="overlay"></div>
+
+  <form id="contact-form">
+
+     <span id="close-form">✖</span>
+  <h3>Checkout Form</h3>
+
+  <div class="form-control">
+    <label>Name:</label>
+    <input type="text" id="inputname" placeholder="Enter your name" required>
+  </div>
+
+  <div class="form-control">
+    <label>Phone Number:</label>
+    <input type="tel" id="inputnumber" placeholder="Phone number" required>
+  </div>
+
+  <div class="form-control">
+    <label>Address Details:</label>
+    <input type="text" id="inputaddress" placeholder="Your address..." required>
+  </div>
+
+  <div class="form-control">
+    <label>Notes (optional):</label>
+    <textarea rows="4" id="textinput" placeholder="Any instructions..."></textarea>
+  </div>
+
+  <button type="submit" id="submitbtn">Order on WhatsApp</button>
+</form>
+
+    <section id="cart">
+      <h2 class="my-cart">My Cart</h2>
+      <div class="cart-wrapper">
+      <div class="cart-left">
+        <!-- cart items displayed here -->
+       
+
+      </div>
+  
+     <div class="cart-right">
+  <h2 class="summary-title">Order Summary</h2>
+
+  <div class="summary-row">
+    <span>Subtotal</span>
+    <span class="subtotal">$100</span>
+  </div>
+
+  <div class="summary-row">
+    <span>Discount</span>
+    <span class="discount">$0</span>
+  </div>
+
+  <div class="summary-divider"></div>
+
+  <div class="summary-row total-row">
+    <span>Total</span>
+    <span class="total">$100</span>
+  </div>
+
+  <button class="checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+</div>
+
+      </div>
+    
+    </section>
+
+   
+
+
+    <script src="/data/data.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+</html>
